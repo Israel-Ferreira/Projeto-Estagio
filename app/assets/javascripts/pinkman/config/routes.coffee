@@ -5,12 +5,19 @@ AppRouter.config
   # analytics: insert your id (UA-YOURNUMBER)
   # transition: any function that runs a animation and accepts a callback function as param.
   
-  yield: 'body'
+  yield: '#content'
   
         
 AppRouter.define (routes) ->
   
+  routes.resources '/users'
+
+
+  
+  routes.match '/', controller: 'home'
+  
   # AppRouter maps url paths to Pinkman controllers.
+
   
   # routes.match "url"
   # Associates "/url" path to "url" controller

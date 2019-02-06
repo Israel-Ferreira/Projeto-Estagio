@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+doctype html
 html
   head
     title MiniTwitter
@@ -7,11 +7,9 @@ html
 
     = stylesheet_link_tag    'application', media: 'all'
     = javascript_include_tag 'application'
-
+    = p.load_templates
 
   body
-
-
 
     #content
       yield
@@ -19,4 +17,4 @@ html
 
 
 
-</html>
+
