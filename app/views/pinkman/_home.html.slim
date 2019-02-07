@@ -7,6 +7,10 @@
                 a.btn.btn-success href="/users/new"  Adicionar Usuário
                 .container
                     = p.each
+                        .user
+                            a href=p.w('routes.show') {{ nickname }}
+                            
+
                         
                 
 
