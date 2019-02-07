@@ -1,13 +1,15 @@
 App.controller 'users-new', ->
   
-  @bind['nickname']
+  @bind ['nickname']
 
   @main = ->
     user = new User
-    @render('users-new')
+    user.render('users-new')
 
   @action 'user-form', 'submit', (user) ->
-    if user.hasErrors()
-      post.render()
-    else
-      $r.go '/'
+    console.log user.nickname
+    user.save (user) -> 
+      if user.hasErrors()
+        user.render()
+      else
+        $r.go '/'

@@ -10,3 +10,21 @@
 .col-lg-6 {
     margin-top: 8px;
 }
+
+.users-cont {
+    margin: 12px;
+    padding: 0px;
+    .user > a, .btn {
+        font-weight: 600;
+        margin-right: 20px;
+        margin-top: 10px;
+    
+    }
+
+}
+
+
+.form-nick {
+    padding: 8px;
+    margin: 8px;
+}
