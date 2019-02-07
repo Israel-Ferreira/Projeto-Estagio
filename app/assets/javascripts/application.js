@@ -13,4 +13,5 @@
 //= require rails-ujs
 
 //= require jquery
+//= require bootstrap.bundle.min.js
 //= require my.pinkman.app
