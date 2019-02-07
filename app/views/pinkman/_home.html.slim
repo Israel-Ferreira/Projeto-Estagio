@@ -1,3 +1,20 @@
 = p.template 'home'
-  h1 home
-  p Find me in <b>/app/views/pinkman/_home.html.slim</b>
+  .container.layout
+    .row
+        .col-lg-4.col-sm-12
+            .container.jumbotron.display-users 
+                h4 Usuários
+                a.btn.btn-success href="/users/new"  Adicionar Usuário
+                .container
+                    = p.each
+                        .user
+                            a href=p.w('routes.show') {{ nickname }}
+                            
+
+                        
+                
+
+
+        .col-lg-8
+            .container.jumbotron
+                p  Site em Construção
