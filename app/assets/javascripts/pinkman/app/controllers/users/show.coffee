@@ -1,4 +1,6 @@
 App.controller 'users-show', ->
+
+  @bind ['nickname']
   
   @main = ->
     Users.one

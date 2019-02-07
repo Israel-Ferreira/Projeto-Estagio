@@ -1,3 +1,29 @@
 // Place all the styles related to the app controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+.layout {
+    margin: 8px;
+}
+
+
+.col-lg-6 {
+    margin-top: 8px;
+}
+
+.users-cont {
+    margin: 12px;
+    padding: 0px;
+    .user > a, .btn {
+        font-weight: 600;
+        margin-right: 20px;
+        margin-top: 10px;
+    
+    }
+
+}
+
+
+.form-nick {
+    padding: 8px;
+    margin: 8px;
+}

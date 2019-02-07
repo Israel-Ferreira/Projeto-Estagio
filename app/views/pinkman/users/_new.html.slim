@@ -1,4 +1,8 @@
 = p.template 'users-new'
   section
     h1 Criar um novo usuário
-    p Find me in <b>/app/views/pinkman/users/_new.html.slim</b>
+
+    .form-nick 
+      = p.form 'user-form' do |f|
+        = f.string 'nickname', 'Usuário'
+        = f.submit 'Salvar'

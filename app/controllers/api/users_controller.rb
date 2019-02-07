@@ -41,6 +41,7 @@ class Api::UsersController < ApiController
   # post api/users
   def create
     @user.assign_attributes user_params
+  
     @user.save
     render json: @user.json(requested_scope)
   end

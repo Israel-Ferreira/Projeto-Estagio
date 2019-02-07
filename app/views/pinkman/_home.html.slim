@@ -5,10 +5,11 @@
             .container.jumbotron.display-users 
                 h4 Usuários
                 a.btn.btn-success href="/users/new"  Adicionar Usuário
-                .container
+                .container.users-cont
                     = p.each
                         .user
                             a href=p.w('routes.show') {{ nickname }}
+                            button.btn.btn-danger data-action='destroy-user' Remover
                             
 
                         
