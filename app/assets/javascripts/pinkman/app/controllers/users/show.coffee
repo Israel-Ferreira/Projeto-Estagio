@@ -1,4 +1,13 @@
 App.controller 'users-show', ->
   
   @main = ->
-    @render('users-show')
+    Users.one
+      scope: 'public',
+      query: @params.id
+      callback: (user) -> 
+        user.render('users-show')
+
+
+
+
+
