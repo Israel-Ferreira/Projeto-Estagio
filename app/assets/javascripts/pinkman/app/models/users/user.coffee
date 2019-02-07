@@ -9,5 +9,8 @@ class window.User extends AppObject
       show: =>
         "/users/#{@id}"
       
+      new:  => 
+        "/users/new"
+      
 
 
